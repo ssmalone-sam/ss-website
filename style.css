@@ -87,13 +87,7 @@ main {
 
 .hero h1 {
   font-size: 2.5rem;
-  margin: 0 0 0.75rem;
-}
-
-.tagline {
-  color: var(--muted);
-  font-size: 1.15rem;
-  max-width: 40rem;
+  margin: 0;
 }
 
 section h2 {
