@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VolleyScore — Scott</title>
+  <meta name="description" content="VolleyScore — live NCAA volleyball scores from ESPN, with set-by-set results, the AVCA Top 25 and team schedules." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2JP9ST1FZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P2JP9ST1FZ');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">SCOTT</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero project-hero">
+      <a class="back-link" href="index.html#projects">&larr; All projects</a>
+      <span class="tag">Project</span>
+      <h1><span>VolleyScore</span></h1>
+      <p class="lede">Live NCAA volleyball scores, fast. Today's D1 women's and men's matches with set-by-set results that update while a game is in progress, the AVCA Top 25 broken down by conference, and every team's full season schedule.</p>
+      <div class="cta-row">
+        <a class="button" href="https://vs.ssmalone.net" target="_blank" rel="noopener">Visit VolleyScore &rarr;</a>
+      </div>
+      <figure class="shot">
+        <img src="images/volleyscore/desktop-games-detail-light.webp" width="1800" height="1125" alt="VolleyScore on a computer: a list of live matches beside a match's set-by-set scores, venue and start time" />
+      </figure>
+    </section>
+
+    <section class="detail">
+      <h2>Why it exists</h2>
+      <p>Following college volleyball usually means digging through a general sports app to find the match you care about, then refreshing to see the score. VolleyScore does one thing: every D1 match for the day, live scores for every set, and a tap away from any team's season.</p>
+      <ul class="points">
+        <li><strong>Live, without refreshing.</strong> An open match updates every 15 seconds while it's in progress, including the set that's being played right now.</li>
+        <li><strong>One tap to watch.</strong> A Watch button links straight to the game's ESPN or Fox stream when one exists, red before the game, green while it's live.</li>
+        <li><strong>Search that understands conferences.</strong> Find games by team or conference, including "Top 25" and "Power 4", across a single day or a date range.</li>
+        <li><strong>No account, no clutter.</strong> No sign-in and no ads, and it installs to your home screen like an app.</li>
+      </ul>
+    </section>
+
+    <section class="detail">
+      <h2>Features</h2>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Live scoreboard</h3>
+          <p>Games are grouped into Live, Upcoming and Final, with a week strip showing how many matches are on each day. Pick any match to see the score by set, the venue and the start time, with ranked teams marked by their AVCA rank.</p>
+        </div>
+        <figure class="shot">
+          <img src="images/volleyscore/desktop-games-detail-dark.webp" width="1800" height="1125" loading="lazy" alt="VolleyScore in dark mode: live matches beside a match's set-by-set scores" />
+        </figure>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Top 25 by conference</h3>
+          <p>The AVCA poll with each team's poll-week record and current record, and movement since last week. Tiles count the ranked teams in the Big Ten, ACC, SEC and Big 12, and a By Conference view regroups the list with each conference's average rank.</p>
+        </div>
+        <figure class="shot">
+          <img src="images/volleyscore/desktop-top25.webp" width="1800" height="1125" loading="lazy" alt="The AVCA Top 25 in VolleyScore with counts of ranked teams per conference" />
+        </figure>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Teams and schedules</h3>
+          <p>Every team with its rank and its overall and conference records, colored green when winning and red when losing, and sortable by either. Tap any team, anywhere in the app, to see its full season of results and upcoming matches.</p>
+        </div>
+        <figure class="shot">
+          <img src="images/volleyscore/desktop-teams.webp" width="1800" height="1125" loading="lazy" alt="The Teams list in VolleyScore with ranks and overall and conference records" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>On a phone</h2>
+      <p>Designed in Apple's iOS 26 Liquid Glass style: large titles and controls that float over the content as translucent glass, with a sidebar and two panes on iPads and computers. Light and dark mode, and installable as a PWA.</p>
+      <div class="phones">
+        <img src="images/volleyscore/phone-games-light.webp" width="600" height="1022" loading="lazy" alt="VolleyScore on a phone: the Games list" />
+        <img src="images/volleyscore/phone-match-detail-light.webp" width="600" height="1022" loading="lazy" alt="VolleyScore on a phone: a live match" />
+        <img src="images/volleyscore/phone-match-detail-dark.webp" width="600" height="1022" loading="lazy" alt="VolleyScore on a phone: a live match in dark mode" />
+        <img src="images/volleyscore/phone-top25.webp" width="600" height="1022" loading="lazy" alt="VolleyScore on a phone: the Top 25" />
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>Built with</h2>
+      <p>A small Express server proxies ESPN's unofficial scoreboard, match and standings API with short caches, and a vanilla HTML, CSS and JavaScript front end polls it. No framework, no build step and no database.</p>
+      <p class="stack">Node.js &middot; Express &middot; Vanilla JS &middot; ESPN API &middot; Service worker (PWA) &middot; Upstash Redis &middot; Vercel</p>
+      <div class="cta-row">
+        <a class="button" href="https://vs.ssmalone.net" target="_blank" rel="noopener">Visit VolleyScore &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="links">
+      <a href="mailto:webdomain@ssmalone.net">webdomain@ssmalone.net</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> SCOTT — INSERT COIN TO CONTINUE</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
