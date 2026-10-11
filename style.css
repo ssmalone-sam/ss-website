@@ -170,6 +170,184 @@ section h2 {
   font-size: 0.75rem;
 }
 
+.project-card h3 a {
+  color: inherit;
+}
+
+.project-card h3 a:hover {
+  color: var(--accent);
+}
+
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-top: 0.9rem;
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.card-links a {
+  color: var(--accent);
+}
+
+.card-links a:hover {
+  color: var(--accent2);
+}
+
+/* Project detail pages */
+
+.project-hero {
+  padding-bottom: 1.5rem;
+}
+
+.back-link {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 1.4rem;
+}
+
+.back-link:hover {
+  color: var(--accent2);
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin: 1.2rem 0 0;
+}
+
+.cta-row {
+  margin: 1.6rem 0 0;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--bg);
+  background: var(--accent2);
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 var(--accent);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--accent);
+}
+
+.shot {
+  margin: 2.2rem 0 0;
+}
+
+.shot img,
+.phones img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid var(--border);
+  box-shadow: 5px 5px 0 var(--border);
+}
+
+.detail {
+  padding: 2.5rem 0;
+}
+
+.detail > p {
+  color: var(--muted);
+  max-width: 680px;
+  margin: 0 0 1.2rem;
+}
+
+.points {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.points li {
+  margin-bottom: 0.6rem;
+}
+
+.points strong {
+  color: var(--fg);
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 1.8rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.feature:nth-of-type(even) .feature-text {
+  order: 2;
+}
+
+.feature .shot {
+  margin: 0;
+}
+
+.feature-text h3 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 0.95rem;
+  color: var(--accent2);
+  margin: 0 0 0.6rem;
+}
+
+.feature-text p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.duo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.duo .shot {
+  margin-top: 1.1rem;
+}
+
+.phones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stack {
+  font-family: "Space Mono", monospace;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 720px) {
+  .feature {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .feature:nth-of-type(even) .feature-text {
+    order: 0;
+  }
+
+  .phones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 2.1rem;
