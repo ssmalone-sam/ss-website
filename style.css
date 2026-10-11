@@ -333,11 +333,6 @@ section h2 {
   max-width: 480px;
 }
 
-.stack {
-  font-family: "Space Mono", monospace;
-  font-size: 0.82rem;
-}
-
 @media (max-width: 720px) {
   .feature {
     grid-template-columns: 1fr;
