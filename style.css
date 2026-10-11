@@ -328,6 +328,11 @@ section h2 {
   margin-top: 1.5rem;
 }
 
+.phones-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 480px;
+}
+
 .stack {
   font-family: "Space Mono", monospace;
   font-size: 0.82rem;

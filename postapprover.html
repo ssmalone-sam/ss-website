@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>postApprover — Scott</title>
+  <meta name="description" content="postApprover — students submit Instagram posts for their team, a coach approves by email, and approval publishes the post." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2JP9ST1FZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P2JP9ST1FZ');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">SCOTT</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero project-hero">
+      <a class="back-link" href="index.html#projects">&larr; All projects</a>
+      <span class="tag">Project</span>
+      <h1><span>postApprover</span></h1>
+      <p class="lede">Let students run their team's Instagram without handing them the password. A student submits photos and a caption, a coach reviews it from an email, and one click on Approve publishes the post to the team's account.</p>
+      <div class="cta-row">
+        <a class="button" href="https://pa.ssmalone.net" target="_blank" rel="noopener">Visit postApprover &rarr;</a>
+      </div>
+      <figure class="shot">
+        <img src="images/postapprover/review-queue.webp" width="1800" height="1209" alt="The postApprover Review Queue: posts pending approval from students, and a post scheduled to publish" />
+      </figure>
+    </section>
+
+    <section class="detail">
+      <h2>Why it exists</h2>
+      <p>High school teams want their athletes posting game days, wins and team dinners, but the coach is the one responsible for what goes up. Sharing the account login means no review at all, and collecting photos by text message means the coach ends up doing the posting. postApprover puts a review step between the two.</p>
+      <ul class="points">
+        <li><strong>Review before anything goes live.</strong> Every approver for the team gets an email, and nothing is published until one of them approves it.</li>
+        <li><strong>Feedback, not just "no".</strong> A rejection carries a comment, and the coach chooses whether the student can fix it and resubmit.</li>
+        <li><strong>Many schools, many teams.</strong> One deployment hosts multiple schools, each team with its own Instagram account and approvers, and people can have different roles on different teams.</li>
+        <li><strong>Invite-only.</strong> Students sign in with their school Google account, and only after an admin invites them.</li>
+      </ul>
+    </section>
+
+    <section class="detail">
+      <h2>Features</h2>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Submit a post</h3>
+          <p>Up to 10 photos in any order, published as a carousel, with a caption and a live preview of how it will look in the feed. Text can be added on top of a photo right in the browser, and an optional publish date holds the post until that day.</p>
+        </div>
+        <figure class="shot">
+          <img src="images/postapprover/new-post.webp" width="1800" height="1097" loading="lazy" alt="Submitting a new post in postApprover: three photos, a caption, an optional publish date and a feed preview" />
+        </figure>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Approve or reject</h3>
+          <p>The coach sees the photos, caption, who submitted it and any requested date. Approve publishes to Instagram straight away, or schedules it, and the student gets an email with the live link.</p>
+        </div>
+        <figure class="shot">
+          <img src="images/postapprover/review-detail.webp" width="1800" height="956" loading="lazy" alt="A coach reviewing a post in postApprover with Approve and publish to Instagram and Reject buttons" />
+        </figure>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Fix and resubmit</h3>
+          <p>A rejected post comes back to the student with the coach's note attached, ready to swap photos or rework the caption and send again.</p>
+        </div>
+        <figure class="shot">
+          <img src="images/postapprover/feedback.webp" width="1800" height="1069" loading="lazy" alt="A rejected post in postApprover showing the coach's feedback above a Fix and resubmit form" />
+        </figure>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Every post and its status</h3>
+          <p>Students track each post from pending to scheduled to published. Coaches can also collect raw photos in a shared asset library, including from a public upload link with a QR code for parents and boosters, and turn any of them into a post.</p>
+        </div>
+        <figure class="shot">
+          <img src="images/postapprover/my-posts.webp" width="1800" height="1012" loading="lazy" alt="My Posts in postApprover: posts that are pending, published, rejected and scheduled" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>On a phone</h2>
+      <p>A tab bar on phones and a sidebar on larger screens, in light and dark mode, with push notifications when it's installed as a PWA.</p>
+      <div class="phones phones-2">
+        <img src="images/postapprover/phone-review.webp" width="600" height="1298" loading="lazy" alt="postApprover on a phone: reviewing a post" />
+        <img src="images/postapprover/phone-posts.webp" width="600" height="1298" loading="lazy" alt="postApprover on a phone: My Posts" />
+      </div>
+    </section>
+
+    <section class="detail">
+      <h2>Built with</h2>
+      <p>Images are stored in each team's own Google Drive, and access tokens for Instagram and Drive are encrypted at rest. Daily scheduled jobs publish scheduled posts, refresh Instagram tokens and clear out posts after a year.</p>
+      <p class="stack">Next.js 16 &middot; TypeScript &middot; PostgreSQL + Prisma &middot; Auth.js (Google sign-in) &middot; Instagram Graph API &middot; Google Drive API &middot; Web Push &middot; Vercel</p>
+      <div class="cta-row">
+        <a class="button" href="https://pa.ssmalone.net" target="_blank" rel="noopener">Visit postApprover &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="links">
+      <a href="mailto:webdomain@ssmalone.net">webdomain@ssmalone.net</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> SCOTT — INSERT COIN TO CONTINUE</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
