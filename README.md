@@ -8,7 +8,6 @@ Personal site — static HTML/CSS, no build step. Deployed on Vercel.
 - `style.css` — styles
 - `vbmail.html` — vbMail project page; screenshots in `images/vbmail/` are copied from the vbMail repo's `public/landing/` (demo data only)
 - `postapprover.html` — postApprover project page; screenshots in `images/postapprover/` are WebP copies of the postApprover repo's `public/landing/` (demo data only)
-- `volleyscore.html` — VolleyScore project page; screenshots in `images/volleyscore/` are WebP copies of the volleyScore repo's `docs/screenshots/` (public ESPN data, shown as-is)
 
 ## Adding a project card
 
